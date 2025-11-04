@@ -10,7 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>The Met</title>
+    <link
+      rel="icon"
+      type="image/svg"
+      href="./src/images/theMet___logo.svg"
+    >
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
@@ -35,6 +40,7 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
     rel="stylesheet"
   />
+
 
   <!-- #endregion -->
 
@@ -139,7 +145,7 @@
           <li class="menu__list-item">
             <ul class="menu__phones">
               <li class="menu__phones-item">
-                The Met Fifth Avenue
+                <a href="https://maps.app.goo.gl/XRgACcu5Ciwh5Np49" target="_blank">The Met Fifth Avenue</a>
                 <br />
                 <a
                   href="tel:+1 212-535-7710"
@@ -149,7 +155,7 @@
                 </a>
               </li>
               <li class="menu__phones-item">
-                The Met Cloisters
+                <a href="https://maps.app.goo.gl/UHKeAvTK96JKKaH16" target="_blank">The Met Cloisters</a>
                 <br />
                 <a
                   href="tel:+1 212-923-3700"
@@ -417,7 +423,7 @@ The Animation of French Decorative Arts
                 Address
               </div>
               <div class="contact-us__text-bold">
-                1000 Fifth Avenue<br>New York, NY 10028
+                <a href="https://maps.app.goo.gl/bxmDwnruvwxgaP8S6" target="_blank">1000 Fifth Avenue<br>New York, NY 10028</a>
               </div>
             </div>
             <div class="contact-us__adresses">
@@ -434,12 +440,16 @@ The Animation of French Decorative Arts
                 Address
               </div>
               <div class="contact-us__text-bold">
-                99 Margaret Corbin Drive<br>Fort Tryon Park<br>New York, NY 10040
+                <a href="https://maps.app.goo.gl/jMmAeq8w5Ys9ho1F7" target="_blank">99 Margaret Corbin Drive<br>Fort Tryon Park<br>New York, NY 10040</a>
               </div>
             </div>
           </div>
 
-          <form action="#" class="contact-us__form">
+          <form
+            action="#"
+            class="contact-us__form"
+            onsubmit="this.reset(); return false;"
+          >
             <input
               type="text"
               name="name"
@@ -463,7 +473,7 @@ The Animation of French Decorative Arts
               class="contact-us__textarea"
             ></textarea>
 
-            <button class="contact-us__button">Send</button>
+            <button type="submit" class="contact-us__button">Send</button>
           </form>
         </div>
       </section>

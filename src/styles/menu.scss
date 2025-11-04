@@ -1,4 +1,9 @@
 .menu {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   background-color: $main_accent;
   height: 100vh;
   padding: 0 20px;
