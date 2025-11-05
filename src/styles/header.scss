@@ -51,12 +51,58 @@
     }
   }
 
+  &__phone-wrapper {
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    pointer-events: none;
+    right: 100%;
+  }
+
+  &__phone {
+    &-adress {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 16px;
+      line-height: 27px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    &-number {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 16px;
+      line-height: 27px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+  }
+
   &__list {
+    list-style: none;
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
     gap: 24px;
+
+    &-item {
+      position: relative;
+    }
+
+    @include on-desktop {
+      &-item:hover .header__phone-wrapper {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
   }
 
   &__title {
