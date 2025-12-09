@@ -126,7 +126,7 @@
     }
 
     @include on-desktop {
-      top: 23%;
+      align-self: center;
       font-size: 80px;
       line-height: 80px;
     }
