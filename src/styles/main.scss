@@ -12,13 +12,13 @@
 .page {
   scroll-behavior: smooth;
 
-  .page:has(.page__menu:target) {
-    overflow: hidden;
-  }
-
   &__body {
     margin: 0;
     font-family: Cinzel, serif;
+
+    &:has(.is-menu:target) {
+      overflow: hidden;
+    }
   }
 
   &__main {

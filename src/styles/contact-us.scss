@@ -12,12 +12,16 @@
   @include grid-columns;
 
   &__text-bold {
+    position: relative;
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
     line-height: 27px;
     color: $main-dark;
     margin-bottom: 8px;
+    width: fit-content;
+
+    @include body-hover;
   }
 
   &__adresses {
